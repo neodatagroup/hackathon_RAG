@@ -51,8 +51,8 @@ docs = loader.load()
 documents = RecursiveCharacterTextSplitter(
     chunk_size=1000, chunk_overlap=400
 ).split_documents(docs)
-vectordb = Chroma.from_documents(documents, OpenAIEmbeddings())
-retriever = vectordb.as_retriever(search_type="mmr", search_kwargs={"k": 6})
+vector = Chroma.from_documents(documents, OpenAIEmbeddings())
+retriever = vector.as_retriever(search_type="mmr", search_kwargs={"k": 6})
 
 # Create tools
 retriever_tool = create_retriever_tool(
