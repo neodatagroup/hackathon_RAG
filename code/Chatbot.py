@@ -93,7 +93,7 @@ I will be your virtual assistant to help you with your experience within the stu
 Ask me anything about your courses or academic career"""
 )
 st.write(
-    "[![view source code ](https://img.shields.io/badge/view_source_code-gray?logo=github)](https://github.com/shashankdeshpande/langchain-chatbot/blob/master/pages/3_%F0%9F%8C%90_chatbot_with_internet_access.py)"
+    "[![view source code ](https://img.shields.io/badge/view_source_code-gray?logo=github)](https://github.com/neodatagroup/hackathon_RAG/tree/main)"
 )
 
 
@@ -113,8 +113,6 @@ with st.sidebar:
     st.divider()
     
     st.markdown("Chiedimi i contatti della segreteria!")
-
-        
 
 
 if prompt := st.chat_input("What is up?", key="first_question"):
